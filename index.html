@@ -1,18 +1,122 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Demo</title>
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.1.0/remixicon.css"
+    />
+    <title>Porfolio Programacion</title>
   </head>
   <body>
-    <p>hola mundo</p>
-    <ul>
-      <li>1</li>
-      <li>2</li>
-      <li>3</li>
-    </ul>
-    <div class="box"></div>
+    <nav>
+      <div class="logo">
+        <a href="#">
+          <img src="imagenes/Logo hever.png" />
+        </a>
+      </div>
+      <ul class="inicio">
+        <li class="link"><a href="#">Inicio</a></li>
+        <li class="link"><a href="#">Sobre Mí</a></li>
+        <li class="link"><a href="#">Educación</a></li>
+        <li class="link"><a href="#">Proyectos</a></li>
+      </ul>
+      <button class="boton">Contrátame</button>
+    </nav>
+    <header class="container">
+      <div class="content">
+        <span class="blur"></span>
+        <span class="blur"></span>
+        <h4>MI PRIMER PORFOLIO</h4>
+        <h1>Hola, soy <span>Santiago</span>, Desarrollador Web</h1>
+        <br />
+        <button class="boton">Empecemos</button>
+      </div>
+      <div class="img">
+        <img src="imagenes/Logo hever.png" />
+      </div>
+    </header>
+    <section class="container">
+      <h2 class="header">SKILLS</h2>
+      <div class="features">
+        <div class="card">
+          <span><i class="ri-html5-fill"></i></span>
+          <h4>HTML</h4>
+          <p>El Primer idioma de muchos, tambien el mio.</p>
+          <a href="https://www.youtube.com/watch?v=kN1XP-Bef7w&ab_channel=SoyDalto">Fuente <i class="ri-arrow-right-line"></i></a>
+        </div>
+        <div class="card">
+          <span><i class="ri-css3-fill"></i></span>
+          <h4>CSS</h4>
+          <p>
+            El segundo idioma que aprendi que va de la mano con el primero, muy
+            útil.
+          </p>
+          <a href="https://www.youtube.com/watch?v=OWKXEJN67FE&t=13542s&ab_channel=SoyDalto">Fuente <i class="ri-arrow-right-line"></i></a>
+        </div>
+        <div class="card">
+          <span><i class="ri-javascript-fill"></i></span>
+          <h4>JavaScript</h4>
+          <p>Idioma muy complejo y basto el cual sigo aprendiendo cada dia!</p>
+          <a href="https://www.youtube.com/watch?v=z95mZVUcJ-E&t=2025s&ab_channel=SoyDalto">Fuente <i class="ri-arrow-right-line"></i></a>
+        </div>
+        <div class="card">
+          <span><i class="ri-wordpress-fill"></i></span>
+          <h4>WordPress</h4>
+          <p>
+            Sitio creador de paginas web con semi-codigo muy util tambien y muy
+            popular.
+          </p>
+          <a href="#">Fuente <i class="ri-arrow-right-line"></i></a>
+        </div>
+      </div>
+    </section>
+
+    <footer class="container">
+      <span class="blur"></span>
+      <span class="blur"></span>
+      <div class="column">
+        <div class="logo">
+          <img src="imagenes/Logo hever.png"/>
+        </div>
+        <p>Acá les dejo mis redes, por si quieren mirar o seguirme.</p>
+        <div class="socials">
+          <a href="https://www.youtube.com/channel/UCOiPNOa8amvlQ6ynDN4FkKw"><i class="ri-youtube-line"></i></a>
+          <a href="https://www.instagram.com/santicoro_/"><i class="ri-instagram-line"></i></a>
+          <a href="https://www.linkedin.com/in/santiago-coronel-8335422a7/"><i class="ri-linkedin-box-fill"></i></a>
+        </div>
+      </div>
+      <div class="column">
+        <h4>Marketing</h4>
+        <a href="#">Business</a>
+        <a href="#">Partnership</a>
+        <a href="#">Network</a>
+      </div>
+      <div class="column">
+        <h4>About Me</h4>
+        <a href="#">Blogs</a>
+        <a href="#">Channels</a>
+        <a href="#">Sponsors</a>
+      </div>
+      <div class="column">
+        <h4>Contact</h4>
+        <a href="#">Contact Us</a>
+        <a href="#">Privicy Policy</a>
+        <a href="#">Terms & Conditions</a>
+      </div>
+    </footer>
+
+    <div class="copyright">
+      Copyright © 2024 Hever2000 Channel. All Rights Reserved.
+    </div>
+    <script src="app.js"></script>
   </body>
 </html>
