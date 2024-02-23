@@ -62,29 +62,43 @@ nav {
   width: 100%;
 }
 
-/* === removing default button style ===*/
-.button {
-  margin: 0;
-  height: auto;
-  background: transparent;
-  padding: 0;
-  border: none;
-  cursor: pointer;
+button {
+  padding: 15px 25px;
+  border: unset;
+  border-radius: 15px;
+  color: #212121;
+  z-index: 1;
+  background: #e8e8e8;
+  position: relative;
+  font-weight: 1000;
+  font-size: 17px;
+  -webkit-box-shadow: 4px 8px 19px -3px rgba(0, 0, 0, 0.27);
+  box-shadow: 4px 8px 19px -3px rgba(0, 0, 0, 0.27);
+  transition: all 250ms;
+  overflow: hidden;
 }
 
-.button {
-  --border-right: 3px;
-  --text-stroke-color: rgba(255, 255, 255, 0.6);
-  --animation-color: rgb(31, 204, 204);
-  --fs-size: 1.5em;
-  letter-spacing: 3px;
-  text-decoration: none;
-  font-size: var(--fs-size);
-  font-family: "Arial";
-  position: relative;
-  text-transform: uppercase;
-  color: transparent;
-  -webkit-text-stroke: 1px var(--text-stroke-color);
+button::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 0;
+  border-radius: 15px;
+  background-color: #212121;
+  z-index: -1;
+  -webkit-box-shadow: 4px 8px 19px -3px rgba(0, 0, 0, 0.27);
+  box-shadow: 4px 8px 19px -3px rgba(0, 0, 0, 0.27);
+  transition: all 250ms;
+}
+
+button:hover {
+  color: #e8e8e8;
+}
+
+button:hover::before {
+  width: 100%;
 }
 
 .hover-text {
@@ -218,6 +232,49 @@ section .header {
 
 .features .card a:hover {
   color: #1e40af;
+}
+
+@keyframes rotate {
+  from {
+    transform: rotateZ(0deg);
+  }
+
+  to {
+    transform: rotateZ(360deg);
+  }
+}
+
+.border {
+  background-image: linear-gradient(to left, rgb(95, 225, 248), blue);
+  border-radius: 20px;
+  display: inline-block;
+  padding: 5px;
+  margin: 20px;
+  
+}
+
+.border::before {
+  background-image: linear-gradient(to left, rgb(95, 225, 248), blue);
+  content: "";
+  position: absolute;
+  z-index: -1;
+  scale: 1.1;
+  filter: blur(25px);
+  animation: rotate 4s linear infinite;
+  border-radius: 100px;
+}
+
+.contenido {
+  background-color: #111;
+  border-radius: 19px;
+  scale: 0.9;
+}
+
+.contenido p {
+  color: #ccc;
+  margin: 20px;
+  font-size: x-large;
+  padding: 20px;
 }
 
 .sub-header {
