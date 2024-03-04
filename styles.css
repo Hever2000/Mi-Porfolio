@@ -63,63 +63,20 @@ nav {
 }
 
 button {
-  padding: 15px 25px;
-  border: unset;
+  background-color: #1d4ed8;
+  padding: 20px;
   border-radius: 15px;
-  color: #212121;
-  z-index: 1;
-  background: #e8e8e8;
-  position: relative;
-  font-weight: 1000;
-  font-size: 17px;
-  -webkit-box-shadow: 4px 8px 19px -3px rgba(0, 0, 0, 0.27);
-  box-shadow: 4px 8px 19px -3px rgba(0, 0, 0, 0.27);
-  transition: all 250ms;
-  overflow: hidden;
-}
-
-button::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  height: 100%;
-  width: 0;
-  border-radius: 15px;
-  background-color: #212121;
-  z-index: -1;
-  -webkit-box-shadow: 4px 8px 19px -3px rgba(0, 0, 0, 0.27);
-  box-shadow: 4px 8px 19px -3px rgba(0, 0, 0, 0.27);
-  transition: all 250ms;
+  box-sizing: border-box;
+  color: white;
+  font-size: 1rem;
+  cursor: pointer;
 }
 
 button:hover {
-  color: #e8e8e8;
+  background-color: blue;
 }
 
-button:hover::before {
-  width: 100%;
-}
-
-.hover-text {
-  position: absolute;
-  box-sizing: border-box;
-  content: attr(data-text);
-  color: var(--animation-color);
-  width: 0%;
-  inset: 0;
-  border-right: var(--border-right) solid var(--animation-color);
-  overflow: hidden;
-  transition: 0.5s;
-  -webkit-text-stroke: 1px var(--animation-color);
-}
-
-.button:hover .hover-text {
-  width: 100%;
-  filter: drop-shadow(0 0 23px var(--animation-color));
-}
-
-.container {
+.container-inicio {
   max-width: 1200px;
   margin: auto;
   padding: 5rem 2rem;
@@ -140,14 +97,14 @@ header {
   gap: 2rem;
 }
 
-header .content h4 {
+header .content-inicio h4 {
   margin-bottom: 1rem;
   color: #ccc;
   font-size: 1rem;
   font-weight: 600;
 }
 
-header .content h1 {
+header .content-inicio h1 {
   color: white;
   margin-bottom: 1rem;
   font-size: 3rem;
@@ -155,17 +112,17 @@ header .content h1 {
   line-height: 4rem;
 }
 
-header .content h1 span {
+header .content-inicio h1 span {
   -webkit-text-fill-color: transparent;
   -webkit-text-stroke: 1px white;
 }
 
-header .content p {
+header .content-inicio p {
   margin-bottom: 2rem;
   color: #ccc;
 }
 
-header .img {
+header .img-logo {
   position: relative;
   display: block;
 }
@@ -175,8 +132,13 @@ header .image img {
   margin: auto;
 }
 
-section .header {
-  margin-bottom: 1rem;
+.container-skills {
+  max-width: 1200px;
+  margin: auto;
+  padding: 5rem 2rem;
+}
+
+section .header-skills {
   color: #fff;
   text-align: center;
   font-size: 2.25rem;
@@ -234,40 +196,11 @@ section .header {
   color: #1e40af;
 }
 
-@keyframes rotate {
-  from {
-    transform: rotateZ(0deg);
-  }
-
-  to {
-    transform: rotateZ(360deg);
-  }
-}
-
-.border {
-  background-image: linear-gradient(to left, rgb(95, 225, 248), blue);
-  border-radius: 20px;
-  display: inline-block;
-  padding: 5px;
-  margin: 20px;
-  
-}
-
-.border::before {
-  background-image: linear-gradient(to left, rgb(95, 225, 248), blue);
-  content: "";
-  position: absolute;
-  z-index: -1;
-  scale: 1.1;
-  filter: blur(25px);
-  animation: rotate 4s linear infinite;
-  border-radius: 100px;
-}
-
 .contenido {
-  background-color: #111;
+  background-color: #27272a;
   border-radius: 19px;
-  scale: 0.9;
+  margin: 2rem;
+  padding: 10px;
 }
 
 .contenido p {
@@ -275,6 +208,38 @@ section .header {
   margin: 20px;
   font-size: x-large;
   padding: 20px;
+}
+
+.contenedor-educacion {
+  margin-top: 4rem;
+  display: flex;
+  flex-direction: row-reverse;
+  gap: 3rem;
+  margin: 3rem;
+}
+
+.imagenes {
+  background-color: #27272a;
+  border-radius: 19px;
+  width: 500px;
+  margin: 2rem;
+  max-width: 400px;
+}
+
+.imagenes img {
+  width: 200px;
+  height: 200px;
+  margin: auto;
+  border-radius: 20px;
+  margin-top: 20px;
+  object-fit: cover;
+}
+
+.imagenes p {
+  color: #ccc;
+  margin: 20px;
+  font-size: x-large;
+  text-align: center;
 }
 
 .sub-header {
