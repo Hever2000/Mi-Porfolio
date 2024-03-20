@@ -63,8 +63,8 @@ nav {
 }
 
 button {
-  background-color: #1e40af;
-  padding: 15px;
+  background-color: transparent;
+  padding: 15px 0px;
   border-radius: 15px;
   box-sizing: border-box;
   color: white;
@@ -72,11 +72,15 @@ button {
   cursor: pointer;
   font-family: "Poppins", sans-serif;
   border: 2px solid blue;
+  width: 150px;
 }
 
 button:hover {
   background-color: blue;
-  transition: all 0.5s ease-in;
+  font-weight: 500;
+  letter-spacing: 1px;
+  transition-timing-function: ease-in;
+  transition-duration: 0.2s;
 }
 
 .container-inicio {
@@ -153,6 +157,7 @@ section .header-skills {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   gap: 2rem;
+  margin-bottom: 4rem;
 }
 
 .features .card {
@@ -199,11 +204,28 @@ section .header-skills {
   color: #1e40af;
 }
 
+.container-sobre-mi {
+  background-image: url("./imagenes/yo-gaming.jpeg");
+  background-size: cover;
+  background-attachment: fixed;
+  background-position-y: center;
+}
+
+.fondo-negro-sobre-mi {
+  padding: 5rem 2rem;
+  width: 100%;
+  height: 100%;
+  background-color: #000a;
+}
+
 .contenido {
   background-color: #27272a;
   border-radius: 19px;
-  margin: 2rem;
+  margin: auto;
+  margin-top: 3rem;
   padding: 10px;
+  max-width: 600px;
+  box-shadow: 0 0 40px 0 #0008;
 }
 
 .contenido p {
@@ -213,23 +235,37 @@ section .header-skills {
   padding: 20px;
 }
 
-.contenedor-educacion {
-  margin-top: 4rem;
-  display: flex;
-  flex-direction: row-reverse;
-  gap: 3rem;
-  margin: 3rem;
+.contenido img {
+  border-radius: 100%;
+  height: 300px;
+  width: 300px;
+  margin: auto;
+  object-fit: cover;
+  object-position: top;
+  margin-bottom: 20px;
+  margin-top: 20px;
 }
 
-.imagenes {
+.container-educacion {
+  max-width: 1200px;
+  margin: auto;
+  padding: 5rem 2rem;
+  margin-top: 4rem;
+  gap: 3rem;
+  display: flex;
+  justify-content: center; /* Alinea los divs horizontalmente al centro */
+  align-items: center; /* Alinea los divs verticalmente al centro */
+}
+
+.div-educacion {
   background-color: #27272a;
   border-radius: 19px;
-  width: 500px;
+  width: 400px;
+  height: 500px;
   margin: 2rem;
-  max-width: 400px;
 }
 
-.imagenes img {
+.div-educacion img {
   width: 200px;
   height: 200px;
   margin: auto;
@@ -238,7 +274,7 @@ section .header-skills {
   object-fit: cover;
 }
 
-.imagenes p {
+.div-educacion p {
   color: #ccc;
   margin: 20px;
   font-size: x-large;
@@ -246,7 +282,7 @@ section .header-skills {
 }
 
 .sub-header {
-  max-width: 600px;
+  min-width: 400px;
   margin: auto;
   text-align: center;
   color: #ccc;
