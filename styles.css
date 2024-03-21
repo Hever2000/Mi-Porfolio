@@ -6,7 +6,6 @@
   outline: none;
 }
 
-
 img {
   width: 100%;
   display: flex;
@@ -147,6 +146,12 @@ header .image img {
   padding: 5rem 2rem;
 }
 
+.container-skills {
+  max-width: 1200px;
+  margin: auto;
+  padding: 5rem 2rem;
+}
+
 section .header-skills {
   color: #fff;
   text-align: center;
@@ -249,6 +254,12 @@ section .header-skills {
   box-shadow: 0 0 40px 0 #9998;
 }
 
+.section-educacion {
+  max-width: 1200px;
+  margin: auto;
+  padding: 5rem 2rem;
+}
+
 .container-educacion {
   margin-top: 4rem;
   gap: 1rem;
@@ -286,6 +297,12 @@ section .header-skills {
   margin: auto;
   text-align: center;
   color: #ccc;
+}
+
+.section-footer {
+  max-width: 1200px;
+  margin: auto;
+  padding: 5rem 2rem;
 }
 
 footer {

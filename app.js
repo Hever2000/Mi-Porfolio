@@ -23,3 +23,28 @@
 //    }
 //  });
 //});
+
+ScrollReveal({ reset: true });
+
+window.sr = ScrollReveal();
+
+sr.reveal(".container-inicio", {
+  duration: 2000,
+  origin: "bottom",
+  distance: "-100px",
+  scale: 0.8,
+});
+
+sr.reveal(".container-skills", {
+  duration: 2000,
+  origin: "bottom",
+  distance: "-100px",
+  scale: 0.8,
+});
+
+sr.reveal(".section-educacion", {
+  duration: 2000,
+  origin: "top",
+  distance: "-100px",
+  scale: 0.8,
+});
