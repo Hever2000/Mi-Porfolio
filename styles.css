@@ -64,7 +64,6 @@ nav {
 
 button {
   background-color: transparent;
-  padding: 15px 0px;
   border-radius: 15px;
   box-sizing: border-box;
   color: white;
@@ -73,6 +72,7 @@ button {
   font-family: "Poppins", sans-serif;
   border: 2px solid blue;
   width: 150px;
+  height: 50px;
 }
 
 button:hover {
@@ -244,24 +244,23 @@ section .header-skills {
   object-position: top;
   margin-bottom: 20px;
   margin-top: 20px;
+  box-shadow: 0 0 40px 0 #9998; 
 }
 
 .container-educacion {
-  max-width: 1200px;
-  margin: auto;
   padding: 5rem 2rem;
   margin-top: 4rem;
-  gap: 3rem;
+  gap: 1rem;
   display: flex;
+  flex-flow: row wrap;
   justify-content: center; /* Alinea los divs horizontalmente al centro */
-  align-items: center; /* Alinea los divs verticalmente al centro */
 }
 
 .div-educacion {
   background-color: #27272a;
   border-radius: 19px;
-  width: 400px;
-  height: 500px;
+  width: 300px;
+  height: 400px;
   margin: 2rem;
 }
 
