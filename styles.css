@@ -77,7 +77,7 @@ button {
   cursor: pointer;
   font-family: "Poppins", sans-serif;
   border: 2px solid blue;
-  width: 150px;
+  min-width: 120px;
   height: 50px;
 }
 
@@ -110,9 +110,7 @@ header {
   gap: 2rem;
 }
 
-.content-inicio button {
-  margin-left: 9rem;
-}
+
 header .content-inicio h4 {
   margin-bottom: 1rem;
   color: #ccc;
@@ -147,6 +145,10 @@ header .img-logo {
 header .image img {
   max-width: 600px;
   margin: auto;
+}
+
+.button-menu-icon {
+  min-width: 70px;
 }
 
 .button-menu-icon,
