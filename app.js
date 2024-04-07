@@ -48,3 +48,15 @@ sr.reveal(".section-educacion", {
   distance: "-100px",
   scale: 0.8,
 });
+
+const lista = document.querySelector("#lista");
+const abrir = document.querySelector("#abrir");
+const cerrar = document.querySelector("#cerrar");
+
+abrir.addEventListener("click", () => {
+  lista.classList.add("visible");
+});
+
+cerrar.addEventListener("click", () => {
+  lista.classList.remove("visible");
+})
