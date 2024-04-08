@@ -59,4 +59,17 @@ abrir.addEventListener("click", () => {
 
 cerrar.addEventListener("click", () => {
   lista.classList.remove("visible");
-})
+});
+
+
+
+
+
+function AlertaContactame(getElementById="contactame"){
+  Swal.fire({
+      icon: "error",
+      title: "Oops...",
+      text: "Esta función todavía no esta disponible",
+      footer: '<a href="#">Why do I have this issue?</a>'
+  });
+}
