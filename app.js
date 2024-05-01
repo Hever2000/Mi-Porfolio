@@ -65,11 +65,30 @@ cerrar.addEventListener("click", () => {
 
 
 
-function AlertaContactame(getElementById="contactame"){
+/*function AlertaContactame(getElementById="contactame"){
   Swal.fire({
       icon: "error",
       title: "Oops...",
       text: "Esta función todavía no esta disponible",
       footer: '<a href="#">Why do I have this issue?</a>'
   });
-}
+}*/
+
+document.getElementById('contactame').addEventListener('click', function() {
+  var div = document.getElementById('form');
+  var overlay = document.getElementById('overlay');
+  if (div.style.display === 'none') {
+    div.style.display = 'block'; // Mostrar el div
+    overlay.style.display = 'block';
+  } else {
+    div.style.display = 'none'; // Ocultar el div
+    overlay.style.display = 'none'; // Ocultar el fondo oscurecido
+  }
+});
+
+document.getElementById('closeBtn').addEventListener('click', function() {
+  var div = document.getElementById('form');
+  var overlay = document.getElementById('overlay');
+  div.style.display = 'none';
+  overlay.style.display = 'none';
+});
