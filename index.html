@@ -21,19 +21,19 @@
 
     <nav class="nav-bar">
       <div class="logo">
-        <a href="#">
+        <a>
           <img src="imagenes/Logo hever.png" />
         </a>
       </div>
       <button class="button-menu-icon" id="abrir"><i class="ri-menu-fill"></i></button>
         <ul class="inicio" id="lista">
           <li class="link"><a href="#inicio">Inicio</a></li>
-          <li class="link"><a href="#Skills">Skills</a></li>
+          <li class="link"><a href="#skills">Skills</a></li>
           <li class="link"><a href="#Sobre Mí">Sobre Mí</a></li>
          <li class="link"><a href="#Educación">Educación</a></li>
          <button class="button-cerrar-menu" id="cerrar"><i class="ri-close-fill"></i></button>
         </ul>
-      <button class="contactame-button" id="contactame" onclick="AlertaContactame(1)">Contactame</button>
+      <button class="contactame-button" id="contactame">Contactame</button>
     </nav>
     
     <header class="container-inicio" id="inicio">
@@ -45,7 +45,7 @@
           Hola, soy <span class="typed">Santiago</span>, Desarrollador Web
         </h1>
         <br />
-        <button>EMPEZAR</button>
+        <button id="btn-empezar">EMPEZAR</button>
       </div>
       <div class="img-logo">
         <img src="imagenes/Logo hever.png" />
@@ -54,15 +54,15 @@
 
     <div class="form-container" id="form">
       
-      <form class="form">
-        <span><i class="ri-phone-fill"></i>:  +54 1164671992</span>
+      <form class="form" action="https://formsubmit.co/santicoronellancellotti@gmail.com" method="POST">
+        <span><i class="ri-phone-fill"></i> : +54 1164671992</span>
         <div class="form-group">
           <label for="email">Tu email</label>
-          <input type="text" id="email" name="email" required="">
+          <input type="email" id="email" name="email" required="">
         </div>
         <div class="form-group">
           <label for="textarea">Cómo podemos ayudarte?</label>
-          <textarea name="textarea" id="textarea" rows="10" cols="50" required="">          </textarea>
+          <textarea name="textarea" id="textarea" rows="10" cols="50" required=""></textarea>
         </div>
         <button class="form-submit-btn" type="submit">ENVIAR</button>
         <span id="closeBtn" class="close"><i class="ri-close-fill"></i></span>
@@ -71,45 +71,43 @@
 
     <span class="overlay" id="overlay"></span>
 
-    <section class="container-skills" id="Skills">
+    <section class="container-skills" id="skills">
       <h2 class="header-skills">SKILLS</h2>
       <div class="features">
         <div class="card">
           <span><i class="ri-html5-fill"></i></span>
-          <h4>HTML</h4>
-          <p>El Primer idioma de muchos, tambien el mio.</p>
+          <h4>HTML-CSS</h4>
+          <p>Mi primer lenguaje de programación web.</p>
           <a
             href="https://www.youtube.com/watch?v=kN1XP-Bef7w&ab_channel=SoyDalto"
             >Fuente <i class="ri-arrow-right-line"></i
           ></a>
         </div>
         <div class="card">
-          <span><i class="ri-css3-fill"></i></span>
-          <h4>CSS</h4>
+          <span><i class="ri-javascript-fill"></i></span>
+          <h4>JavaScript</h4>
           <p>
-            El segundo idioma que aprendi que va de la mano con el primero, muy
-            útil.
+            Lenguaje de programación que me permitió dar el salto a la programación web.
           </p>
           <a
-            href="https://www.youtube.com/watch?v=OWKXEJN67FE&t=13542s&ab_channel=SoyDalto"
+            href="https://www.freecodecamp.org/learn/javascript-v9/#lecture-introduction-to-javascript"
             >Fuente <i class="ri-arrow-right-line"></i
           ></a>
         </div>
         <div class="card">
-          <span><i class="ri-javascript-fill"></i></span>
-          <h4>JavaScript</h4>
-          <p>Idioma muy complejo y vasto el cual sigo aprendiendo cada dia!</p>
+          <span><i class="ri-java-fill">🍵</i></span>
+          <h4>Java</h4>
+          <p>Aprendiendo a profundidad sobre el manejo de spring-boot </p>
           <a
             href="https://www.youtube.com/watch?v=z95mZVUcJ-E&t=2025s&ab_channel=SoyDalto"
             >Fuente <i class="ri-arrow-right-line"></i
           ></a>
         </div>
         <div class="card">
-          <span><i class="ri-wordpress-fill"></i></span>
-          <h4>WordPress</h4>
+          <span><i class="ri-reactjs-line"></i></span>
+          <h4>React</h4>
           <p>
-            Sitio creador de paginas web con semi-codigo muy util tambien y muy
-            popular.
+            Framework de JavaScript muy popular para construir interfaces de usuario.
           </p>
           <a href="#">Fuente <i class="ri-arrow-right-line"></i></a>
         </div>
@@ -125,12 +123,12 @@
         <div class="contenido">
           <img src="imagenes/yo-lolla.jpeg">
           <p>
-            Me llamo Santiago Coronel, mis amigos me dicen Coro y en el mundo del gaming mi username es hever. Soy un desarrollador web trainee argentino.
-            Empecé en el mundo de la programación mirando videos de tecnologías IT, realmente me atrapó.
+            Me llamo Santiago Coronel y soy un estuidante de tercer año de ingeniería en informática,
+            me atrae mucho la programación y el pensamiento lógico para crear soluciones que cubran necesidades.
           </p>
           <p>
-            Actualmente estoy juntando experiencia y nuevos conocimientos para cumplir mis metas.
-            En cuanto a mi educación, me encuentro arrancando la carrera de Ingeniería en informática en la USAL.
+            Actualmente estoy aprendiendo más a profundidad sobre tecnologías como React y Java (Spring Boot). 
+            Al mismo tiempo, estoy creando proyectos para demostrar mis habilidades y mejorar mi portafolio.
           </p>
         </div>
       </div>

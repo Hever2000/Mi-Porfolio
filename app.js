@@ -74,10 +74,22 @@ cerrar.addEventListener("click", () => {
   });
 }*/
 
+document.getElementById('btn-empezar').addEventListener('click', function() {
+  const targetElement = document.getElementById('skills');
+  if (targetElement) {
+    const offsetTop = targetElement.getBoundingClientRect().top + window.pageYOffset;
+    window.scrollTo({
+      top: offsetTop,
+      behavior: 'smooth'
+    });
+  }
+
+});
+
 document.getElementById('contactame').addEventListener('click', function() {
-  var div = document.getElementById('form');
-  var overlay = document.getElementById('overlay');
-  if (div.style.display === 'none') {
+  const div = document.getElementById('form');
+  const overlay = document.getElementById('overlay');
+  if (div.style.display != 'block') {
     div.style.display = 'block'; // Mostrar el div
     overlay.style.display = 'block';
   } else {
@@ -87,8 +99,8 @@ document.getElementById('contactame').addEventListener('click', function() {
 });
 
 document.getElementById('closeBtn').addEventListener('click', function() {
-  var div = document.getElementById('form');
-  var overlay = document.getElementById('overlay');
+  const div = document.getElementById('form');
+  const overlay = document.getElementById('overlay');
   div.style.display = 'none';
   overlay.style.display = 'none';
 });
