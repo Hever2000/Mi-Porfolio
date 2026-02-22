@@ -29,6 +29,21 @@ if (typeof ScrollReveal === 'function') {
     scale: 0.8,
   });
 
+  sr.reveal('.section-proyectos', {
+    duration: 1800,
+    origin: 'bottom',
+    distance: '80px',
+    scale: 0.95,
+  });
+
+  sr.reveal('.section-proyectos .card-proyecto', {
+    duration: 1400,
+    origin: 'bottom',
+    distance: '60px',
+    interval: 150,
+    scale: 0.98,
+  });
+
   sr.reveal('.container-skills', {
     duration: 2000,
     origin: 'bottom',
