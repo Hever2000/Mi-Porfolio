@@ -1,9 +1,9 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html>
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="./src/style.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -14,55 +14,54 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.1.0/remixicon.css"
     />
-    <link rel="icon" type="image/x-png" href="imagenes/logo hever con dedos.png">
-    <title>Porfolio Programacion</title>
+    <link rel="icon" type="image/png" href="./imagenes/logo hever con dedos.png" />
+    <title>Portfolio Programacion</title>
   </head>
   <body>
-
     <nav class="nav-bar">
       <div class="logo">
-        <a>
-          <img src="imagenes/Logo hever.png" />
+        <a href="#inicio" aria-label="Ir al inicio">
+          <img src="./imagenes/Logo hever.png" alt="Logo" />
         </a>
       </div>
-      <button class="button-menu-icon" id="abrir"><i class="ri-menu-fill"></i></button>
-        <ul class="inicio" id="lista">
-          <li class="link"><a href="#inicio">Inicio</a></li>
-          <li class="link"><a href="#skills">Skills</a></li>
-          <li class="link"><a href="#Sobre Mí">Sobre Mí</a></li>
-         <li class="link"><a href="#Educación">Educación</a></li>
-         <button class="button-cerrar-menu" id="cerrar"><i class="ri-close-fill"></i></button>
-        </ul>
-      <button class="contactame-button" id="contactame">Contactame</button>
+      <button class="button-menu-icon" id="abrir" aria-label="Abrir menu"><i class="ri-menu-fill"></i></button>
+      <ul class="inicio" id="lista">
+        <li class="link"><a href="#inicio">Inicio</a></li>
+        <li class="link"><a href="#skills">Skills</a></li>
+        <li class="link"><a href="#sobre-mi">Sobre Mi</a></li>
+        <li class="link"><a href="#educacion">Educacion</a></li>
+        <button class="button-cerrar-menu" id="cerrar" aria-label="Cerrar menu"><i class="ri-close-fill"></i></button>
+      </ul>
+      <button class="contactame-button" id="contactame">Contacto</button>
     </nav>
-    
+
     <header class="container-inicio" id="inicio">
       <div class="content-inicio">
         <span class="blur"></span>
         <span class="blur"></span>
-        <h4>MI PORFOLIO COMO DESARROLLADOR</h4>
-        <h1>
-          Hola, soy <span class="typed">Santiago</span>, Desarrollador Web
-        </h1>
+        <h4>MI PORTFOLIO COMO DESARROLLADOR</h4>
+        <h1>Hola, soy <span class="typed">Santiago</span>, Desarrollador Web</h1>
         <br />
-        <button id="btn-empezar">EMPEZAR</button>
+        <a href="./imagenes/CV Santiago Coronel.pdf" download="CVSantiagoCoronel.pdf"> <button class="btn-cv">CV <i class="ri-file-download-line"></i></button></a>
+        <a href="https://github.com/Hever2000"><button class="btn-github" href="https://github.com/Hever2000"><i class="ri-github-fill"></i></button></a>
+        
+        <a href="https://www.linkedin.com/in/santiago-coronel-8335422a7/"><button class="btn-linkedin"><i class="ri-linkedin-fill"></i></button></a>
       </div>
       <div class="img-logo">
-        <img src="imagenes/Logo hever.png" />
+        <img src="./imagenes/Logo hever.png" alt="Logo principal" />
       </div>
     </header>
 
     <div class="form-container" id="form">
-      
       <form class="form" action="https://formsubmit.co/santicoronellancellotti@gmail.com" method="POST">
         <span><i class="ri-phone-fill"></i> : +54 1164671992</span>
         <div class="form-group">
           <label for="email">Tu email</label>
-          <input type="email" id="email" name="email" required="">
+          <input type="email" id="email" name="email" required />
         </div>
         <div class="form-group">
-          <label for="textarea">Cómo podemos ayudarte?</label>
-          <textarea name="textarea" id="textarea" rows="10" cols="50" required=""></textarea>
+          <label for="textarea">Como podemos ayudarte?</label>
+          <textarea name="textarea" id="textarea" rows="10" cols="50" required></textarea>
         </div>
         <button class="form-submit-btn" type="submit">ENVIAR</button>
         <span id="closeBtn" class="close"><i class="ri-close-fill"></i></span>
@@ -77,82 +76,64 @@
         <div class="card">
           <span><i class="ri-html5-fill"></i></span>
           <h4>HTML-CSS</h4>
-          <p>Mi primer lenguaje de programación web.</p>
-          <a
-            href="https://www.youtube.com/watch?v=kN1XP-Bef7w&ab_channel=SoyDalto"
-            >Fuente <i class="ri-arrow-right-line"></i
-          ></a>
+          <p>Mi primer lenguaje de programacion web.</p>
+          <a href="https://www.youtube.com/watch?v=kN1XP-Bef7w&ab_channel=SoyDalto">Fuente <i class="ri-arrow-right-line"></i></a>
         </div>
         <div class="card">
           <span><i class="ri-javascript-fill"></i></span>
           <h4>JavaScript</h4>
-          <p>
-            Lenguaje de programación que me permitió dar el salto a la programación web.
-          </p>
-          <a
-            href="https://www.freecodecamp.org/learn/javascript-v9/#lecture-introduction-to-javascript"
-            >Fuente <i class="ri-arrow-right-line"></i
-          ></a>
+          <p>Lenguaje de programacion que me permitio dar el salto a la programacion web.</p>
+          <a href="https://www.freecodecamp.org/learn/javascript-v9/#lecture-introduction-to-javascript">Fuente <i class="ri-arrow-right-line"></i></a>
         </div>
         <div class="card">
-          <span><i class="ri-java-fill">🍵</i></span>
+          <span><i class="ri-java-fill"></i></span>
           <h4>Java</h4>
-          <p>Aprendiendo a profundidad sobre el manejo de spring-boot </p>
-          <a
-            href="https://www.youtube.com/watch?v=z95mZVUcJ-E&t=2025s&ab_channel=SoyDalto"
-            >Fuente <i class="ri-arrow-right-line"></i
-          ></a>
+          <p>Aprendiendo a profundidad sobre el manejo de Spring Boot.</p>
+          <a href="https://www.youtube.com/watch?v=z95mZVUcJ-E&t=2025s&ab_channel=SoyDalto">Fuente <i class="ri-arrow-right-line"></i></a>
         </div>
         <div class="card">
           <span><i class="ri-reactjs-line"></i></span>
           <h4>React</h4>
-          <p>
-            Framework de JavaScript muy popular para construir interfaces de usuario.
-          </p>
+          <p>Framework de JavaScript muy popular para construir interfaces de usuario.</p>
           <a href="#">Fuente <i class="ri-arrow-right-line"></i></a>
         </div>
       </div>
     </section>
 
-    <section class="container-sobre-mi" id="Sobre Mí">
+    <section class="container-sobre-mi" id="sobre-mi">
       <div class="fondo-negro-sobre-mi">
-      <h2 class="header-skills">
-        <span> <i class="ri-user-line"></i> </span>SOBRE MI
-      </h2>
-      <div class="border">
-        <div class="contenido">
-          <img src="imagenes/yo-lolla.jpeg">
-          <p>
-            Me llamo Santiago Coronel y soy un estuidante de tercer año de ingeniería en informática,
-            me atrae mucho la programación y el pensamiento lógico para crear soluciones que cubran necesidades.
-          </p>
-          <p>
-            Actualmente estoy aprendiendo más a profundidad sobre tecnologías como React y Java (Spring Boot). 
-            Al mismo tiempo, estoy creando proyectos para demostrar mis habilidades y mejorar mi portafolio.
-          </p>
+        <h2 class="header-skills"><span><i class="ri-user-line"></i></span> SOBRE MI</h2>
+        <div class="border">
+          <div class="contenido">
+            <img src="./imagenes/yo-lolla.jpeg" alt="Foto personal" />
+            <p>
+              Me llamo Santiago Coronel y soy estudiante de tercer ano de ingenieria en informatica.
+              Me atrae mucho la programacion y el pensamiento logico para crear soluciones.
+            </p>
+            <p>
+              Actualmente estoy aprendiendo mas a profundidad sobre tecnologias como React y Java (Spring Boot).
+              Al mismo tiempo, estoy creando proyectos para demostrar mis habilidades y mejorar mi portfolio.
+            </p>
+          </div>
         </div>
       </div>
     </section>
 
-    <section class="section-educacion" id="Educación">
-      <h2 class="header-skills">
-        <span> <i class="ri-graduation-cap-line"></i> </span>EDUCACIÓN
-      </h2>
+    <section class="section-educacion" id="educacion">
+      <h2 class="header-skills"><span><i class="ri-graduation-cap-line"></i></span> EDUCACION</h2>
       <div class="container-educacion">
         <div class="div-educacion">
-          <img src="imagenes/euskal echea.png" />
-          <p>
-            Nivel primario y secundario (Bachiller en economía y administración)
-          </p>
+          <img src="./imagenes/euskal echea.png" alt="Euskal Echea" />
+          <p>Nivel primario y secundario (Bachiller en economia y administracion)</p>
         </div>
 
         <div class="div-educacion">
-          <img src="imagenes/USAL.jpg" />
-          <p>Nivel universitario (Ingeniería en informática)</p>
+          <img src="./imagenes/USAL.jpg" alt="USAL" />
+          <p>Nivel universitario (Ingenieria en informatica)</p>
         </div>
 
         <div class="div-educacion">
-          <img src="imagenes/undraw_Programming_re_kg9v.png" />
+          <img src="./imagenes/undraw_Programming_re_kg9v.png" alt="Programacion" />
           <p>Autodidacta</p>
         </div>
       </div>
@@ -163,19 +144,13 @@
       <span class="blur"></span>
       <div class="column">
         <div class="logo">
-          <img src="imagenes/Logo hever.png" />
+          <img src="./imagenes/Logo hever.png" alt="Logo footer" />
         </div>
-        <p>Acá les dejo mis redes, por si quieren mirar o seguirme.</p>
+        <p>Aca les dejo mis redes, por si quieren mirar o seguirme.</p>
         <div class="socials">
-          <a href="https://www.youtube.com/channel/UCOiPNOa8amvlQ6ynDN4FkKw"
-            ><i class="ri-youtube-line"></i
-          ></a>
-          <a href="https://www.instagram.com/santicoro_/"
-            ><i class="ri-instagram-line"></i
-          ></a>
-          <a href="https://www.linkedin.com/in/santiago-coronel-8335422a7/"
-            ><i class="ri-linkedin-box-fill"></i
-          ></a>
+          <a href="https://www.youtube.com/channel/UCOiPNOa8amvlQ6ynDN4FkKw"><i class="ri-youtube-line"></i></a>
+          <a href="https://www.instagram.com/santicoro_/"><i class="ri-instagram-line"></i></a>
+          <a href="https://www.linkedin.com/in/santiago-coronel-8335422a7/"><i class="ri-linkedin-box-fill"></i></a>
         </div>
       </div>
       <div class="column">
@@ -193,19 +168,15 @@
       <div class="column">
         <h4>Contact</h4>
         <a href="#">Contact Us</a>
-        <a href="#">Privicy Policy</a>
+        <a href="#">Privacy Policy</a>
         <a href="#">Terms & Conditions</a>
       </div>
     </footer>
 
-    <div class="copyright">
-      Copyright © 2024 Hever2000 Channel. All Rights Reserved.
-    </div>
+    <div class="copyright">Copyright (c) 2024 Hever2000 Channel. All Rights Reserved.</div>
 
     <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
     <script src="https://unpkg.com/scrollreveal"></script>
-    <script src="sweetalert2.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
-    <script src="app.js"></script>
+    <script type="module" src="./src/main.js"></script>
   </body>
 </html>
