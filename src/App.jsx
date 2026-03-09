@@ -1,5 +1,6 @@
 import { useCallback, useState } from 'react';
 import { Analytics } from '@vercel/analytics/react';
+import { SpeedInsights } from "@vercel/speed-insights/react"
 import FooterSection from './components/layout/FooterSection';
 import Navbar from './components/layout/Navbar';
 import AboutSection from './components/sections/AboutSection';
@@ -64,6 +65,7 @@ function App() {
       <EducationSection items={educationItems} />
       <FooterSection footer={footerData} />
       <Analytics />
+      <SpeedInsights />
     </div>
   );
 }
