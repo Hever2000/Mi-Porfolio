@@ -9,9 +9,18 @@
     "preview": "vite preview"
   },
   "devDependencies": {
+    "@tailwindcss/postcss": "^4.2.1",
+    "@vitejs/plugin-react": "^5.1.4",
+    "autoprefixer": "^10.4.27",
+    "postcss": "^8.5.8",
+    "tailwindcss": "^4.2.1",
     "vite": "^7.3.1"
   },
   "dependencies": {
-    "@vercel/analytics": "^1.6.1"
+    "@vercel/analytics": "^1.6.1",
+    "react": "^19.2.4",
+    "react-dom": "^19.2.4",
+    "scrollreveal": "^4.0.9",
+    "typed.js": "^3.0.0"
   }
 }
