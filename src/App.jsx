@@ -1,4 +1,5 @@
 import { useCallback, useState } from 'react';
+import { Analytics } from '@vercel/analytics/react';
 import FooterSection from './components/layout/FooterSection';
 import Navbar from './components/layout/Navbar';
 import AboutSection from './components/sections/AboutSection';
@@ -62,6 +63,7 @@ function App() {
       <AboutSection about={aboutData} />
       <EducationSection items={educationItems} />
       <FooterSection footer={footerData} />
+      <Analytics />
     </div>
   );
 }
