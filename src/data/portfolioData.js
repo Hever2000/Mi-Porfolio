@@ -1,5 +1,7 @@
 import {
+  chatBotLogo,
   cvFile,
+  facturaAI,
   fondoSobreMi,
   fotoPersonal,
   logoEuskal,
@@ -8,6 +10,8 @@ import {
   portadaAbm,
   portadaMovieApp,
   portadaPortafolio,
+  telegramLogo,
+  logoUdemy,
 } from '../assets/portfolioAssets';
 
 export const navItems = [
@@ -51,10 +55,10 @@ export const projects = [
   {
     title: 'FacturaAI',
     description: 'API procesadora de comprobantes y recibos con IA automáticamente.',
-    image: portadaPortafolio,
+    image: facturaAI,
     imageAlt: 'FacturaAI',
-    preview: '#',
-    repo: '#',
+    preview: 'https://factura-ai-web.vercel.app/',
+    repo: 'https://github.com/Hever2000/FacturaAI-web',
     stackLabel: 'Stack FacturaAI',
     stackIcons: [
       {
@@ -70,7 +74,7 @@ export const projects = [
   {
     title: 'AI Sales Agent',
     description: 'Sistema autónomo de generación y calificación de leads que reemplaza tareas de SDR y aumenta la tasa de conversión.',
-    image: portadaPortafolio,
+    image: chatBotLogo,
     imageAlt: 'AI Sales Agent',
     preview: '#',
     repo: '#',
@@ -89,15 +93,15 @@ export const projects = [
   {
     title: 'Chatbot Empresarial',
     description: 'Asistente interno para empleados que funciona como un "cerebro de la empresa": responde dudas, busca información en todos los sistemas y ejecuta tareas automáticamente.',
-    image: portadaPortafolio,
+    image: telegramLogo,
     imageAlt: 'Chatbot Empresarial',
     preview: '#',
     repo: '#',
     stackLabel: 'Stack Chatbot',
     stackIcons: [
       {
-        className: 'devicon-python-plain colored text-[2rem]',
-        title: 'Python',
+        className: 'devicon-n8n-colored text-[2rem]',
+        title: 'N8N',
       },
       {
         className: 'devicon-telegram colored text-[2rem]',
@@ -212,9 +216,9 @@ export const educationItems = [
     text: 'Nivel universitario (Ingenieria en informatica)',
   },
   {
-    image: logoEuskal,
+    image: logoUdemy,
     imageAlt: 'Udemy',
-    text: 'Curso de n8n - Automatizaciones Inteligentes',
+    text: 'Curso de n8n - Master en Automatizaciones Inteligentes con IA',
   },
 ];
 
