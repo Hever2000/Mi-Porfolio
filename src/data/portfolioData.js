@@ -69,7 +69,7 @@ export const projects = [
   },
   {
     title: 'AI Sales Agent',
-    description: 'Sistema autónomo de generación y calificación de leads con IA.',
+    description: 'Sistema autónomo de generación y calificación de leads que reemplaza tareas de SDR y aumenta la tasa de conversión.',
     image: portadaPortafolio,
     imageAlt: 'AI Sales Agent',
     preview: '#',
@@ -88,7 +88,7 @@ export const projects = [
   },
   {
     title: 'Chatbot Empresarial',
-    description: 'Asistente interno para empleados via Telegram con IA.',
+    description: 'Asistente interno para empleados que funciona como un "cerebro de la empresa": responde dudas, busca información en todos los sistemas y ejecuta tareas automáticamente.',
     image: portadaPortafolio,
     imageAlt: 'Chatbot Empresarial',
     preview: '#',
@@ -161,33 +161,31 @@ export const skills = [
   {
     iconClass: 'ri-html5-fill',
     title: 'HTML-CSS',
-    description: 'Mi primer lenguaje de programacion web.',
-    source: 'https://www.youtube.com/watch?v=kN1XP-Bef7w&ab_channel=SoyDalto',
+    description: 'Maquetado semántico yresponsive con CSS Grid/Flexbox, accesibilidad y mejores prácticas de performance.',
+    source: '#',
   },
   {
     iconClass: 'ri-javascript-fill',
     title: 'JavaScript',
-    description:
-      'Lenguaje de programacion que me permitio dar el salto a la programacion web.',
-    source:
-      'https://www.freecodecamp.org/learn/javascript-v9/#lecture-introduction-to-javascript',
+    description: 'Manipulación del DOM, programación asíncrona con promises y async/await, closures, prototypes y ES6+ features.',
+    source: '#',
   },
   {
     iconClass: 'devicon-python-plain tech-icon',
     title: 'Python',
-    description: 'FastAPI, scripting y automatización con IA.',
+    description: 'FastAPI, scripting, automatización con IA y gestión de dependencias con pip y virtual environments.',
     source: '#',
   },
   {
     iconClass: 'devicon-java-plain tech-icon',
     title: 'Java',
-    description: 'Aprendiendo a profundidad sobre el manejo de Spring Boot.',
-    source: 'https://www.youtube.com/watch?v=z95mZVUcJ-E&t=2025s&ab_channel=SoyDalto',
+    description: 'POO con patrones de diseño, gestión de memoria,Collections Framework y programación concurrente.',
+    source: '#',
   },
   {
     iconClass: 'ri-reactjs-line',
     title: 'React',
-    description: 'Framework de JavaScript muy popular para construir interfaces de usuario.',
+    description: 'Componentes funcionales con hooks, contexto, state management y ciclo de vida paraSPAs escalables.',
     source: '#',
   },
 ];

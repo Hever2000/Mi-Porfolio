@@ -15,7 +15,7 @@ function HeroSection({ hero }) {
           <span className="typed [-webkit-text-fill-color:transparent] [-webkit-text-stroke:1px_white]">
             Santiago
           </span>
-          , AI Automation Developer & FullStack Engineer
+          , FullStack Developer & AI Automation
         </h1>
         <br />
         <div className="btn-container flex max-w-[28rem] justify-around">
