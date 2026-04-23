@@ -8,7 +8,7 @@ import fondoSobreMi from '../../imagenes/BannerHever.png';
 import logoEuskal from '../../imagenes/euskal echea.png';
 import logoUsal from '../../imagenes/USAL.jpg';
 import telegramLogo from '../../imagenes/telegram-logo.jpg';
-import chatBotLogo from '../../imagenes/chatbotlogo.jpg';
+import n8nLogo from '../../imagenes/n8n.png';
 import logoUdemy from '../../imagenes/udemylogo.png';
 import facturaAI from '../../imagenes/FacturaAI.png';
 
@@ -23,7 +23,7 @@ export {
   logoEuskal,
   logoUsal,
   telegramLogo,
-  chatBotLogo,
+  n8nLogo,
   logoUdemy,
   facturaAI,
 };

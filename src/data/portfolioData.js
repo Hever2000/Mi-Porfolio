@@ -1,5 +1,5 @@
 import {
-  chatBotLogo,
+  n8nLogo,
   cvFile,
   facturaAI,
   fondoSobreMi,
@@ -74,7 +74,7 @@ export const projects = [
   {
     title: 'AI Sales Agent',
     description: 'Sistema autónomo de generación y calificación de leads que reemplaza tareas de SDR y aumenta la tasa de conversión.',
-    image: chatBotLogo,
+    image: n8nLogo,
     imageAlt: 'AI Sales Agent',
     preview: '#',
     repo: '#',
