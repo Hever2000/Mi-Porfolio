@@ -4,7 +4,6 @@ import {
   fotoPersonal,
   logoEuskal,
   logoHever,
-  logoProgramacion,
   logoUsal,
   portadaAbm,
   portadaMovieApp,
@@ -35,13 +34,74 @@ export const projects = [
     description: 'Este es mi portafolio personal como desarrollador FullStack.',
     image: portadaPortafolio,
     imageAlt: 'Proyecto 1',
-    preview: 'https://hever2000.github.io/Mi-Porfolio/',
+    preview: 'https://portfolio-santiagocoronel.vercel.app/',
     repo: 'https://github.com/Hever2000/Mi-Porfolio',
     stackLabel: 'Stack Portafolio',
     stackIcons: [
       {
         className: 'devicon-javascript-plain colored text-[2rem]',
         title: 'JavaScript',
+      },
+      {
+        className: 'devicon-react-original colored text-[2rem]',
+        title: 'React',
+      },
+    ],
+  },
+  {
+    title: 'FacturaAI',
+    description: 'API procesadora de comprobantes y recibos con IA automáticamente.',
+    image: portadaPortafolio,
+    imageAlt: 'FacturaAI',
+    preview: '#',
+    repo: '#',
+    stackLabel: 'Stack FacturaAI',
+    stackIcons: [
+      {
+        className: 'devicon-python-plain colored text-[2rem]',
+        title: 'Python',
+      },
+      {
+        className: 'devicon-fastapi-plain colored text-[2rem]',
+        title: 'FastAPI',
+      },
+    ],
+  },
+  {
+    title: 'AI Sales Agent',
+    description: 'Sistema autónomo de generación y calificación de leads con IA.',
+    image: portadaPortafolio,
+    imageAlt: 'AI Sales Agent',
+    preview: '#',
+    repo: '#',
+    stackLabel: 'Stack AI Sales Agent',
+    stackIcons: [
+      {
+        className: 'devicon-n8n-colored text-[2rem]',
+        title: 'n8n',
+      },
+      {
+        className: 'devicon-openai colored text-[2rem]',
+        title: 'OpenAI',
+      },
+    ],
+  },
+  {
+    title: 'Chatbot Empresarial',
+    description: 'Asistente interno para empleados via Telegram con IA.',
+    image: portadaPortafolio,
+    imageAlt: 'Chatbot Empresarial',
+    preview: '#',
+    repo: '#',
+    stackLabel: 'Stack Chatbot',
+    stackIcons: [
+      {
+        className: 'devicon-python-plain colored text-[2rem]',
+        title: 'Python',
+      },
+      {
+        className: 'devicon-telegram colored text-[2rem]',
+        title: 'Telegram',
       },
     ],
   },
@@ -81,6 +141,24 @@ export const projects = [
 
 export const skills = [
   {
+    iconClass: 'ri-robot-line',
+    title: 'AI & Automation',
+    description: 'Diseño e implementación de sistemas autónomos basados en LLMs con n8n y LangChain.',
+    source: '#',
+  },
+  {
+    iconClass: 'ri-flow-chart',
+    title: 'n8n',
+    description: 'Automatizaciones workflow e integración de APIs para procesos inteligentes.',
+    source: '#',
+  },
+  {
+    iconClass: 'ri-code-s-slash-line',
+    title: 'Prompt Engineering',
+    description: 'Diseño de prompts avanzados y agentes de IA para automatización de tareas complejas.',
+    source: '#',
+  },
+  {
     iconClass: 'ri-html5-fill',
     title: 'HTML-CSS',
     description: 'Mi primer lenguaje de programacion web.',
@@ -93,6 +171,12 @@ export const skills = [
       'Lenguaje de programacion que me permitio dar el salto a la programacion web.',
     source:
       'https://www.freecodecamp.org/learn/javascript-v9/#lecture-introduction-to-javascript',
+  },
+  {
+    iconClass: 'devicon-python-plain tech-icon',
+    title: 'Python',
+    description: 'FastAPI, scripting y automatización con IA.',
+    source: '#',
   },
   {
     iconClass: 'devicon-java-plain tech-icon',
@@ -113,8 +197,8 @@ export const aboutData = {
   photo: fotoPersonal,
   photoAlt: 'Foto personal',
   paragraphs: [
-    'Me llamo Santiago Coronel y soy estudiante de tercer ano de ingenieria en informatica. Me atrae mucho la programacion y el pensamiento logico para crear soluciones.',
-    'Actualmente estoy aprendiendo mas a profundidad sobre tecnologias como React y Java (Spring Boot). Al mismo tiempo, estoy creando proyectos para demostrar mis habilidades y mejorar mi portfolio.',
+    'Me llamo Santiago Coronel y soy estudiante de tercer año de ingeniería en informática. Me especializo en diseñar e implementar sistemas autónomos basados en LLMs.',
+    'Construyo pipelines de automatización end-to-end que integran APIs, agentes de IA y bases de datos vectoriales para resolver problemas reales de negocio.',
   ],
 };
 
@@ -130,9 +214,9 @@ export const educationItems = [
     text: 'Nivel universitario (Ingenieria en informatica)',
   },
   {
-    image: logoProgramacion,
-    imageAlt: 'Programacion',
-    text: 'Autodidacta',
+    image: logoEuskal,
+    imageAlt: 'Udemy',
+    text: 'Curso de n8n - Automatizaciones Inteligentes',
   },
 ];
 
