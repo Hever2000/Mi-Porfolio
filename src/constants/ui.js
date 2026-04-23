@@ -1,8 +1,8 @@
 export const baseButtonClass =
-  'box-border h-[50px] min-w-[100px] max-w-fit cursor-default rounded-[15px] border border-[#404040] bg-[#1d1d1d] font-["Poppins",sans-serif] text-base text-white hover:border-2 hover:border-blue-600 hover:bg-[#2c2c2c] hover:font-medium hover:duration-100 hover:ease-in';
+  'box-border h-[46px] min-w-[100px] px-6 cursor-default rounded-[8px] border border-[#333] bg-[#27272a] font-["Poppins",sans-serif] text-sm text-white transition-all duration-300 hover:bg-[#3a3a3a] hover:border-[#555]';
 
 export const navLinkClass =
-  'relative pb-3 text-white after:absolute after:bottom-0 after:left-0 after:h-[2px] after:w-0 after:bg-blue-600 after:transition-all after:duration-500 after:content-[""] hover:after:w-full';
+  'relative pb-3 text-white text-sm after:absolute after:bottom-0 after:left-0 after:h-[2px] after:w-0 after:bg-blue-500 after:transition-all after:duration-500 after:content-[""] hover:after:w-full';
 
 export const socialLinkClass =
-  'rounded-full border border-[#ccc] px-[10px] py-[5px] text-[1.25rem] text-[#ccc] transition-all duration-300 ease-in hover:border-[#1d4ed8] hover:bg-[#1d4ed8] hover:text-white';
+  'flex items-center justify-center w-10 h-10 rounded-[8px] border border-[#444] text-[#ccc] text-xl transition-all duration-300 hover:border-blue-500 hover:text-white';

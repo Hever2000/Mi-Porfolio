@@ -8,7 +8,7 @@ function ProjectsSection({ projects }) {
       <div className="container-proyectos mt-12 grid grid-cols-[repeat(auto-fit,minmax(280px,1fr))] gap-8">
         {projects.map((project) => (
           <div
-            className="card-proyecto flex min-h-[420px] flex-col overflow-hidden rounded-[19px] border border-transparent bg-[#27272a] transition duration-300 ease-in hover:-translate-y-1 hover:border-[#3b82f6]"
+            className="card-proyecto flex min-h-[420px] flex-col overflow-hidden rounded-[12px] border border-[#333] bg-[#27272a] transition-all duration-300 hover:border-blue-500 hover:brightness-110"
             key={project.title}
           >
             <img src={project.image} alt={project.imageAlt} className="h-[200px] w-full object-cover" />
@@ -36,7 +36,7 @@ function ProjectsSection({ projects }) {
                 </a>
                 <a href={project.repo}>
                   <button className={baseButtonClass} type="button">
-                    <i className="ri-github-fill text-2xl" />
+                    <i className="ri-github-fill text-xl" />
                   </button>
                 </a>
               </div>
