@@ -7,8 +7,9 @@ import fotoPersonal from '../../imagenes/FotoCV.jpeg';
 import fondoSobreMi from '../../imagenes/BannerHever.png';
 import logoEuskal from '../../imagenes/euskal echea.png';
 import logoUsal from '../../imagenes/USAL.jpg';
-import telegramLogo from '../../imagenes/telegram-logo.jpg';
+import rag from '../../imagenes/rag.png';
 import n8nLogo from '../../imagenes/n8n.png';
+import leads from '../../imagenes/leads.png';
 import logoUdemy from '../../imagenes/udemylogo.png';
 import facturaAI from '../../imagenes/FacturaAI.png';
 
@@ -22,8 +23,9 @@ export {
   fondoSobreMi,
   logoEuskal,
   logoUsal,
-  telegramLogo,
+  rag,
   n8nLogo,
   logoUdemy,
   facturaAI,
+  leads,
 };

@@ -10,8 +10,9 @@ import {
   portadaAbm,
   portadaMovieApp,
   portadaPortafolio,
-  telegramLogo,
+  rag,
   logoUdemy,
+  leads,
 } from '../assets/portfolioAssets';
 
 export const navItems = [
@@ -37,7 +38,7 @@ export const projects = [
     title: 'Portafolio',
     description: 'Este es mi portafolio personal como desarrollador FullStack.',
     image: portadaPortafolio,
-    imageAlt: 'Proyecto 1',
+    imageAlt: 'Portafolio',
     preview: 'https://portfolio-santiagocoronel.vercel.app/',
     repo: 'https://github.com/Hever2000/Mi-Porfolio',
     stackLabel: 'Stack Portafolio',
@@ -53,113 +54,80 @@ export const projects = [
     ],
   },
   {
+    title: 'ABM Alumnos',
+    description: 'Aplicacion web hecha con Java y Spring Boot, que maneja las altas, bajas y modificaciones de alumnos.',
+    image: portadaAbm,
+    imageAlt: 'ABM Alumnos',
+    preview: 'https://hever2000.github.io/Proyecto-ABM-Alumnos/',
+    repo: 'https://github.com/Hever2000/Proyecto-ABM-Alumnos',
+    stackLabel: 'Stack ABM',
+    stackIcons: [
+    ],
+  },
+  {
+    title: 'MovieApp',
+    description: 'Aplicacion web hecha aplicando conceptos de integracion con web APIs y manejo de estados.',
+    image: portadaMovieApp,
+    imageAlt: 'MovieApp',
+    preview: 'https://hever2000.github.io/Proyecto-Peliculas-React/',
+    repo: 'https://github.com/Hever2000/Proyecto-Peliculas-React',
+    stackLabel: 'Stack MovieApp',
+    stackIcons: [
+    ],
+  },
+  {
+    title: 'Chatbot RAG Empresarial',
+    description: "Chatbot interno para empleados que funciona como un cerebro de la empresa: a partir de una arquitectura RAG, y luego de procesar la información mediante la carga de documentos, el chatbot puede responder preguntas sobre la empresa, sus procesos, políticas, etc. puede ser integrada con calendarios, CRMs, ERP, etc.",
+    image: rag,
+    imageAlt: 'Chatbot RAG Empresarial',
+    preview: '#',
+    repo: '#',
+    stackLabel: 'Stack Chatbot',
+    stackIcons: [
+    ],
+  },
+  {
     title: 'FacturaAI',
-    description: 'API procesadora de comprobantes y recibos con IA automáticamente.',
+    description: 'API procesadora de comprobantes y recibos con IA automáticamente integrado con OCR + IA como parser (Python + FastAPI).',
     image: facturaAI,
     imageAlt: 'FacturaAI',
     preview: 'https://factura-ai-web.vercel.app/',
     repo: 'https://github.com/Hever2000/FacturaAI-web',
     stackLabel: 'Stack FacturaAI',
     stackIcons: [
-      {
-        className: 'devicon-python-plain colored text-[2rem]',
-        title: 'Python',
-      },
-      {
-        className: 'devicon-fastapi-plain colored text-[2rem]',
-        title: 'FastAPI',
-      },
     ],
   },
   {
-    title: 'AI Sales Agent',
-    description: 'Sistema autónomo de generación y calificación de leads que reemplaza tareas de SDR y aumenta la tasa de conversión.',
-    image: n8nLogo,
-    imageAlt: 'AI Sales Agent',
+    title: 'Generador de Leads',
+    description: 'Sistema autónomo de generación de leads mediante la busqueda y scraping en sitios web, y luego la automatización del contacto inicial a través de email o LinkedIn, utilizando n8n para orquestar todo el proceso.',
+    image: leads,
+    imageAlt: 'Generador de Leads',
     preview: '#',
     repo: '#',
-    stackLabel: 'Stack AI Sales Agent',
+    stackLabel: 'Stack Generador de Leads',
     stackIcons: [
-      {
-        className: 'devicon-n8n-colored text-[2rem]',
-        title: 'n8n',
-      },
-      {
-        className: 'devicon-openai colored text-[2rem]',
-        title: 'OpenAI',
-      },
     ],
   },
-  {
-    title: 'Chatbot Empresarial',
-    description: 'Asistente interno para empleados que funciona como un "cerebro de la empresa": responde dudas, busca información en todos los sistemas y ejecuta tareas automáticamente.',
-    image: telegramLogo,
-    imageAlt: 'Chatbot Empresarial',
-    preview: '#',
-    repo: '#',
-    stackLabel: 'Stack Chatbot',
-    stackIcons: [
-      {
-        className: 'devicon-n8n-colored text-[2rem]',
-        title: 'N8N',
-      },
-      {
-        className: 'devicon-telegram colored text-[2rem]',
-        title: 'Telegram',
-      },
-    ],
-  },
-  {
-    title: 'ABM Alumnos',
-    description: 'Aplicacion web para gestionar alumnos de una escuela.',
-    image: portadaAbm,
-    imageAlt: 'Proyecto 2',
-    preview: 'https://hever2000.github.io/Proyecto-ABM-Alumnos/',
-    repo: 'https://github.com/Hever2000/Proyecto-ABM-Alumnos',
-    stackLabel: 'Stack ABM',
-    stackIcons: [
-      {
-        className: 'devicon-javascript-plain colored text-[2rem]',
-        title: 'JavaScript',
-      },
-      { className: 'devicon-java-plain colored text-[2rem]', title: 'Java' },
-      {
-        className: 'devicon-spring-original colored text-[2rem]',
-        title: 'Spring Boot',
-      },
-    ],
-  },
-  {
-    title: 'MovieApp',
-    description: 'Aplicacion web para buscar y likear peliculas y series.',
-    image: portadaMovieApp,
-    imageAlt: 'Proyecto 3',
-    preview: 'https://hever2000.github.io/Proyecto-Peliculas-React/',
-    repo: 'https://github.com/Hever2000/Proyecto-Peliculas-React',
-    stackLabel: 'Stack MovieApp',
-    stackIcons: [
-      { className: 'devicon-react-original colored text-[2rem]', title: 'React' },
-    ],
-  },
+  
 ];
 
 export const skills = [
   {
     iconClass: 'ri-robot-line',
     title: 'AI & Automation',
-    description: 'Diseño e implementación de sistemas autónomos basados en LLMs con n8n y LangChain.',
+    description: 'Diseño e implementación de sistemas autónomos basados en LLMs.',
     source: '#',
   },
   {
     iconClass: 'ri-flow-chart',
     title: 'n8n',
-    description: 'Automatizaciones workflow e integración de APIs para procesos inteligentes.',
+    description: 'Automatizaciones avanzadas de procesos de negocio e integración de APIs para procesos inteligentes.',
     source: '#',
   },
   {
     iconClass: 'ri-code-s-slash-line',
     title: 'Prompt Engineering',
-    description: 'Diseño de prompts avanzados y agentes de IA para automatización de tareas complejas.',
+    description: 'Few-Shot, Chain-of-Thought y Step-Back Prompting.',
     source: '#',
   },
   {
@@ -177,7 +145,7 @@ export const skills = [
   {
     iconClass: 'devicon-python-plain tech-icon',
     title: 'Python',
-    description: 'FastAPI, scripting, automatización con IA y gestión de dependencias con pip y virtual environments.',
+    description: 'Funciones de automatización con IA, scripting y gestión de dependencias con pip y virtual environments.',
     source: '#',
   },
   {
