@@ -59,7 +59,7 @@ function Navbar({
       </ul>
 
       <button
-        className={`${baseButtonClass} h-[50px] w-[4rem] min-w-[4rem]`}
+        className={`${baseButtonClass} `}
         id="contactame"
         type="button"
         onClick={onToggleContact}
