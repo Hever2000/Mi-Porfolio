@@ -167,8 +167,9 @@ export const aboutData = {
   photo: fotoPersonal,
   photoAlt: 'Foto personal',
   paragraphs: [
-    'Me llamo Santiago Coronel y soy estudiante de tercer año de ingeniería en informática. Me especializo en diseñar e implementar sistemas autónomos basados en LLMs.',
-    'Construyo pipelines de automatización end-to-end que integran APIs, agentes de IA y bases de datos vectoriales para resolver problemas reales de negocio.',
+    "Me llamo Santiago Coronel, soy AI Automation Developer con background en Full-Stack.",
+    "Diseño e implemento automatizaciones de procesos empresariales, desde la identificación de cuellos de botella hasta el despliegue y mantenimiento de proyectos escalables.",
+    "Mis soluciones incluyen integracion con APIs, CRMs, ERPs,arquitecturas RAG y/o Whatsapp API. Estudiante de Ingeniería Informática",
   ],
 };
 
