@@ -3,7 +3,7 @@ import cvFile from '../../imagenes/CVSantiagoCoronel.pdf';
 import portadaPortafolio from '../../imagenes/portafolio.png';
 import portadaAbm from '../../imagenes/abm.png';
 import portadaMovieApp from '../../imagenes/MovieApp.png';
-import fotoPersonal from '../../imagenes/FotoIACV.png';
+import fotoPersonal from '../../imagenes/fotoIACV.png';
 import fondoSobreMi from '../../imagenes/BannerHever.png';
 import logoEuskal from '../../imagenes/euskal echea.png';
 import logoUsal from '../../imagenes/USAL.jpg';
