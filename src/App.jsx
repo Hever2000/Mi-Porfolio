@@ -9,7 +9,8 @@ import HeroSection from './components/sections/HeroSection';
 import ProjectsSection from './components/sections/ProjectsSection';
 import SkillsSection from './components/sections/SkillsSection';
 import ContactModal from './components/ui/ContactModal';
-import useScrollReveal from './hooks/useScrollReveal';
+import AnimatedBackground from './components/ui/AnimatedBackground';
+import Particles from './components/ui/Particles';
 import {
   aboutData,
   contactData,
@@ -25,8 +26,6 @@ function App() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [isContactOpen, setIsContactOpen] = useState(false);
 
-  useScrollReveal();
-
   const handleNavClick = useCallback((event, targetId) => {
     event.preventDefault();
 
@@ -40,7 +39,10 @@ function App() {
   }, []);
 
   return (
-    <div className="bg-[#18181b] font-['Poppins',sans-serif]">
+    <div className="relative min-h-screen bg-[#18181b] font-sans">
+      <AnimatedBackground />
+      <Particles />
+
       <Navbar
         navItems={navItems}
         logo={heroData.logo}
