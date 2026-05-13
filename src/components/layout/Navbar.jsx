@@ -1,72 +1,133 @@
-import { baseButtonClass, navLinkClass } from '../../constants/ui';
+import { useState, useEffect } from 'react';
+import { motion, AnimatePresence } from 'framer-motion';
+import PremiumButton from '../ui/PremiumButton';
 
-function Navbar({
-  navItems,
-  logo,
-  isMenuOpen,
-  onOpenMenu,
-  onCloseMenu,
-  onNavClick,
-  onToggleContact,
-}) {
+function Navbar({ navItems, logo, isMenuOpen, onOpenMenu, onCloseMenu, onNavClick, onToggleContact }) {
+  const [scrolled, setScrolled] = useState(false);
+
+  useEffect(() => {
+    const onScroll = () => setScrolled(window.scrollY > 20);
+    window.addEventListener('scroll', onScroll, { passive: true });
+    return () => window.removeEventListener('scroll', onScroll);
+  }, []);
+
   return (
-    <nav className="sticky top-0 z-[1000] m-auto flex w-full flex-wrap items-center justify-around gap-8 bg-[#18181b] p-[15px] shadow-[0_0_20px_0_black]">
-      <div className="max-w-[110px]">
-        <a href="#inicio" aria-label="Ir al inicio" onClick={(event) => onNavClick(event, 'inicio')}>
-          <img src={logo} alt="Logo" className="flex w-full" />
-        </a>
-      </div>
-
-      <button
-        className={`${baseButtonClass} hidden min-w-[70px] max-[800px]:block max-[800px]:max-w-[100px] max-[800px]:border-none max-[800px]:text-[28px] max-[800px]:font-light`}
-        id="abrir"
-        aria-label="Abrir menu"
-        type="button"
-        onClick={onOpenMenu}
-      >
-        <i className="ri-menu-fill" />
-      </button>
-
-      <ul
-        className={`inicio list-none items-center gap-12 min-[801px]:relative min-[801px]:flex min-[801px]:opacity-100 min-[801px]:visible ${
-          isMenuOpen
-            ? 'max-[800px]:visible max-[800px]:fixed max-[800px]:right-0 max-[800px]:top-0 max-[800px]:z-[9999] max-[800px]:flex max-[800px]:min-h-full max-[800px]:flex-col max-[800px]:items-end max-[800px]:gap-8 max-[800px]:bg-[#18181b] max-[800px]:px-8 max-[800px]:pb-[100rem] max-[800px]:pt-8 max-[800px]:opacity-100 max-[800px]:shadow-[0_0_0_100vmax_#000a]'
-            : 'max-[800px]:invisible max-[800px]:absolute max-[800px]:opacity-0'
-        }`}
-        id="lista"
-      >
-        {navItems.map((item) => (
-          <li className="link" key={item.id}>
-            <a
-              href={`#${item.id}`}
-              className={navLinkClass}
-              onClick={(event) => onNavClick(event, item.id)}
-            >
-              {item.label}
-            </a>
-          </li>
-        ))}
+    <motion.nav
+      className={`fixed top-0 left-0 right-0 z-[1000] transition-all duration-300 ${
+        scrolled
+          ? 'bg-[#18181b]/80 backdrop-blur-xl shadow-[0_1px_0_rgba(255,255,255,0.05)]'
+          : 'bg-transparent'
+      }`}
+      initial={{ y: -20, opacity: 0 }}
+      animate={{ y: 0, opacity: 1 }}
+      transition={{ duration: 0.6, ease: [0.25, 0.1, 0.25, 1] }}
+    >
+      <div className="mx-auto flex max-w-[1200px] items-center justify-between px-8 py-4">
+        <motion.a
+          href="#inicio"
+          className="max-w-[90px]"
+          aria-label="Ir al inicio"
+          onClick={(e) => onNavClick(e, 'inicio')}
+          whileHover={{ scale: 1.03 }}
+          transition={{ type: 'spring', stiffness: 400, damping: 20 }}
+        >
+          <img src={logo} alt="Logo" className="w-full" />
+        </motion.a>
 
         <button
-          className={`${baseButtonClass} hidden max-[800px]:mt-10 max-[800px]:block max-[800px]:max-w-[200px] max-[800px]:border-none max-[800px]:text-[28px] max-[800px]:font-light`}
-          id="cerrar"
-          aria-label="Cerrar menu"
+          className="flex h-9 w-9 items-center justify-center rounded-lg border border-[#333] text-white md:hidden"
+          aria-label="Abrir menu"
           type="button"
-          onClick={onCloseMenu}
+          onClick={onOpenMenu}
         >
-          <i className="ri-close-fill" />
+          <i className="ri-menu-fill text-lg" />
         </button>
-      </ul>
 
-      <button
-        className={`${baseButtonClass} `}
-        id="contactame"
-        type="button"
-        onClick={onToggleContact}
-      >
-        Contacto
-      </button>
-    </nav>
+        <ul className="hidden items-center gap-8 md:flex">
+          {navItems.map((item) => (
+            <li key={item.id}>
+              <motion.a
+                href={`#${item.id}`}
+                className="relative pb-1 text-sm font-medium text-[#999] transition-colors duration-300 hover:text-white"
+                onClick={(e) => onNavClick(e, item.id)}
+                whileHover={{ y: -1 }}
+                transition={{ type: 'spring', stiffness: 400, damping: 20 }}
+              >
+                {item.label}
+                <motion.span
+                  className="absolute bottom-0 left-0 h-[2px] bg-blue-500"
+                  initial={{ width: 0 }}
+                  whileHover={{ width: '100%' }}
+                  transition={{ duration: 0.3 }}
+                />
+              </motion.a>
+            </li>
+          ))}
+        </ul>
+
+        <PremiumButton
+          variant="primary"
+          size="sm"
+          className="hidden md:inline-flex"
+          onClick={onToggleContact}
+        >
+          Contacto
+        </PremiumButton>
+      </div>
+
+      <AnimatePresence>
+        {isMenuOpen && (
+          <>
+            <motion.div
+              className="fixed inset-0 z-[999] bg-black/60 backdrop-blur-sm md:hidden"
+              initial={{ opacity: 0 }}
+              animate={{ opacity: 1 }}
+              exit={{ opacity: 0 }}
+              onClick={onCloseMenu}
+            />
+            <motion.div
+              className="fixed right-0 top-0 z-[1000] flex h-full w-72 flex-col gap-6 bg-[#18181b] p-8 shadow-2xl md:hidden"
+              initial={{ x: '100%' }}
+              animate={{ x: 0 }}
+              exit={{ x: '100%' }}
+              transition={{ type: 'spring', stiffness: 300, damping: 30 }}
+            >
+              <button
+                className="self-end text-2xl text-white"
+                aria-label="Cerrar menu"
+                type="button"
+                onClick={onCloseMenu}
+              >
+                <i className="ri-close-fill" />
+              </button>
+
+              {navItems.map((item, i) => (
+                <motion.a
+                  key={item.id}
+                  href={`#${item.id}`}
+                  className="text-lg font-medium text-[#999] transition-colors hover:text-white"
+                  onClick={(e) => onNavClick(e, item.id)}
+                  initial={{ opacity: 0, x: 20 }}
+                  animate={{ opacity: 1, x: 0 }}
+                  transition={{ delay: i * 0.08 }}
+                >
+                  {item.label}
+                </motion.a>
+              ))}
+
+              <PremiumButton
+                variant="accent"
+                size="md"
+                className="mt-4"
+                onClick={onToggleContact}
+              >
+                Contacto
+              </PremiumButton>
+            </motion.div>
+          </>
+        )}
+      </AnimatePresence>
+    </motion.nav>
   );
 }
 
